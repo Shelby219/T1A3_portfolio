@@ -34,19 +34,27 @@ header img {
     display: flex;
     padding: 16px;
     font-family: sans-serif;
-    color: black;
+    
   }
   
   .Navbar__Link {
     padding-right: 8px;
   }
-  
+
   .Navbar__Items {
     display: flex;
+    text-decoration: none;
+  }
+  .item {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    margin-right: 50px;
   }
   
   .Navbar__Items--right {
     margin-left:auto;
+    text-decoration: none;
   }
   
   .Navbar__Link-toggle {
@@ -57,15 +65,18 @@ header img {
     .Navbar__Items,
     .Navbar {
       flex-direction: column;
+      text-decoration: none;
     }
     .Navbar__Items {
       display:none;
     }
     .Navbar__Items--right {
       margin-left:0;
+      text-decoration: none;
     }
     .Navbar__ToggleShow {
       display: flex;
+      text-decoration: none;
     }
     .Navbar__Link-toggle {
       align-self: flex-end;
