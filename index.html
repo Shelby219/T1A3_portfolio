@@ -6,35 +6,45 @@
         <title>Shelby El-rassi Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Jost:ExtraLight);" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="./css/style.css">
+        <link rel="stylesheet"  href="./src/styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/7edf7d6684.js" crossorigin="anonymous"></script>
+        
     </head>
-  
+
     <body>
         <header>
                 <!-- Header Site Navigator -->
-                <img width = 10% src="./src/imgs/Letter_logo.png">
-                    <nav class="menu"> 
-                        <ul> 
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a> 
-                            </li>
-                            <li>
-                                <a href="#">My Work</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul> 
-                    </nav>
+                <div class="Navbar">
+                    <div class="Navbar__Link Navbar__Link-brand">
+                      <a href="index.html"><img src="./src/imgs/Letter_logo.png"></a>
+                     </div>
+                     <div class="Navbar__Link Navbar__Link-toggle">
+                         <!-- Burger Menu Icon from Font Awesome-->
+                       <i class="fas fa-bars"></i>
+                     </div>
+                   <nav class="Navbar__Items">
+                   </nav>
+                   <nav class="Navbar__Items Navbar__Items--right">
+                     <div class="Navbar__Link">
+                       <a class = "item" href="src/about.html">About</a> 
+                     </div>
+                     <div class="Navbar__Link">
+                       <a class = "item" href="src/mywork.html">My Work</a>
+                     </div>
+                     <div class="Navbar__Link">
+                       <a  class = "item" href="src/blog.html">Blog</a>
+                     </div>
+                     <div class="Navbar__Link">
+                       <a  class = "item" href="src/contact.html">Contact</a>
+                     </div>
+                   </nav>
+                 </div>
                 </header>
 
                 <main>
+
+
                     <!-- Intro  (Hello, I am Shelby) -->
                     <section>
                         <div class= "name"> 
@@ -119,34 +129,22 @@
                     <div>
                         <p>Find me Elsewhere....</p>
                     </div>
-                        <ul> 
-                            <li>
-                                <img width = 10% src="./src/imgs/Linked In.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./src/imgs/GitHub.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./src/imgs/Codenpen.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./src/imgs/Twitter.png">
-                            </li>
-                        </ul> 
 
+                    <ul class="">
+                        <!-- icons from https://fontawesome.com -->
+                        <li><a href="https://github.com/Shelby219"><i class="fab fa-github" title="link to Github"></i></a></li>
+                        <li><a href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
+                        <li><a href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shelby-el-rassi-693738195/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
+                    </ul>
+    
                     <div>
                     <p> © 2020 </p>
                     </div>
                     <div><a href="EMAIL LINK">Back To Top</a></div>    
                 </footer>
 
-                <aside>
-                    <div>
-
-                    </div>
-
-                </aside>
-   
+        <script src="/src/nav.js"></script>
     </body>
         	
 </html>
