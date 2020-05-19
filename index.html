@@ -5,8 +5,7 @@
         <meta name="author" content="Shelby El-rassi">
         <title>Shelby El-rassi Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet"  href="./src/styles/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/7edf7d6684.js" crossorigin="anonymous"></script>
@@ -68,13 +67,10 @@
                     </section>
 
                     <!-- Recent Blog Posts 1, 2 and 3 -->
-                    <section>
-                        <h3>
-                        Recent Posts
-                        </h3>
+                    <section class = "blog-recent-container">
+                        <h3>Recent Posts</h3>
                         <ul>
-                            
-                            <li>
+                            <li class = "blog-recent-posts" >
                                 <a href="/blog_posts/blogpost1.html" >
                                 <strong>Blog Post: 1</strong>
                                 <div class="subtitle">Subtitle Post: 1</div>
@@ -82,7 +78,7 @@
                                 </a>
                             </li>
                                 <br>
-                            <li>
+                            <li class = "blog-recent-posts" >
                                 <a href="/blog_posts/blogpost1.html" >
                                     <strong>Blog Post: 1</strong>
                                     <div class="subtitle">Subtitle Post: 1</div>
@@ -90,7 +86,7 @@
                                     </a>
                                 </li>
                             <br>
-                            <li>
+                            <li class = "blog-recent-posts" >
                                 <a href="/blog_posts/blogpost1.html" >
                                     <strong>Blog Post: 1</strong>
                                     <div class="subtitle">Subtitle Post: 1</div>
@@ -99,7 +95,7 @@
                                 </li>
                         </ul>
                         <br>
-                        <div><a href="./src/blog.html">View All Posts</a></div>
+                        <h3><a href="./src/blog.html">View All Posts &rarr; </a></h3>
             
                     </section>
 
@@ -112,7 +108,7 @@
                         Hey!
                     </div>
                     <div class = "footer-part2">
-                        <p> Thanks for reaching the bottom of this page. There is more about me and my work if you would like to learn more. </p>
+                        <p> Thanks for reaching the bottom of this page. There is more <a class ="footer-links"  href="src/about.html">about me</a> and <a class ="footer-links"  href="src/mywork.html"> my work </a> if you would like to learn more. </p>
                     </div>
                     <div class = "footer-part3">
                         <p>Alternatively, check out this fancy sheet of paper <a class ="footer-links" href="RESUME PDF"> Résumé</a></p>
@@ -135,8 +131,8 @@
     
                     <div class="footer-part6" >
                     <p> © 2020 </p>
-                    </div>
-                    <div><a href="EMAIL LINK">Back To Top</a></div>    
+                    <a href="EMAIL LINK">Back To Top</a>
+                    </div>   
                 </footer>
 
         <script src="/src/nav.js"></script>
