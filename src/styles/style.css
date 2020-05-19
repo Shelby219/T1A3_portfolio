@@ -80,7 +80,6 @@ header img {
     }
     .Navbar__ToggleShow {
       display: flex;
-      font-size: 5px;
     }
     .Navbar__Link-toggle {
       align-self: flex-end;
@@ -88,6 +87,11 @@ header img {
       position: absolute;
       cursor: pointer;
      } 
+
+     .Navbar__Link-toggle i{
+      font-size: 25px;   
+      margin-top: 5px;   
+     }
      .item {
         color: black;
         background-color: white;
