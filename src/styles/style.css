@@ -39,6 +39,10 @@ header img {
   .Navbar__Link {
     padding-right: 8px;
     list-style: none;
+    
+  }
+  .Navbar__Link-brand img {
+    width: 50px;
   }
 
   .Navbar__Items {
@@ -76,6 +80,7 @@ header img {
     }
     .Navbar__ToggleShow {
       display: flex;
+      font-size: 5px;
     }
     .Navbar__Link-toggle {
       align-self: flex-end;
@@ -140,7 +145,6 @@ h1 span.features-special {
 
 .blog-recent-container h3 {
     padding: 20px;
-    font-family: 'Abril Fatface', cursive;
     background-color: #F4DBDB; 
 }
 
@@ -167,8 +171,7 @@ h1 span.features-special {
 .blog-recent-posts strong {
     color: grey;
     font-size: 1.5rem;
-    font-style: bold;
-    
+    font-style: bold;  
 }
 
  .subtitle {
@@ -202,7 +205,7 @@ h1 span.features-special {
     justify-content: flex-start;
     
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 0.75rem;
 }
 
 .footer-icons {
@@ -215,7 +218,7 @@ h1 span.features-special {
 
 .icons {
     margin: 10px; 
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: black;
 }
 
@@ -232,7 +235,7 @@ h1 span.features-special {
     padding: 5px;
     text-decoration: none;
     color:black;
-   
+    font-size: 0.9rem;
 }
 
 .footer-part6 a {
@@ -247,7 +250,8 @@ h1 span.features-special {
 .footer-links {
     text-decoration: none;
     color: #0F9B9B;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .footer-links:hover {
