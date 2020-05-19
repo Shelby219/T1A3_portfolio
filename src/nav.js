@@ -11,6 +11,6 @@
 
 $(document).ready(function () {
   $('.fa-bars').click(function () {
-      $('.Navbar__Link-toggle').slideToggle("slow");
+      $('"nav"').slideToggle("slow");
   })
 }); 
