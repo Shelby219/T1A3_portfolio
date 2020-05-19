@@ -237,7 +237,7 @@
 
 /* OBJECTS */
 .bubble {
-  background-image: url("./src/imgs/se_paints.jpg");
+  background-image: url("https://images.unsplash.com/photo-1588097237448-45f7aadebae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   border-radius: 50%;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
@@ -268,15 +268,18 @@
 
 /*******************************/
 /*****BACKGROUND FOR HOME PAGE COME BACK TO******/
-.background-img {
-  width: 100%;
-  height: 100vh;
-  background-image: url("file:///Users/shelbyd/CODING/SE_portfolio/src/imgs/se_paints.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-size: 100% 100%;
-}
-
+/*
+.background-img  {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1588097237448-45f7aadebae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    }
+**/
 /*****WELCOME INTRO SECTION******/
 .intro-container {
   display: -webkit-box;
@@ -301,8 +304,8 @@
 section div.intro-sec1 img {
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .intro-container h2 {
@@ -340,8 +343,8 @@ h1 span.features-special {
           flex-direction: column;
   margin-bottom: 200px;
   margin-top: 200px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .blog-recent-container h3 {
@@ -402,7 +405,7 @@ h1 span.features-special {
 }
 
 /* Tablet Styles */
-/* FOOTER */
+/** MAIN CONTENT */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .intro-container {
     margin-top: 250px;
@@ -419,7 +422,7 @@ h1 span.features-special {
 }
 
 /* Desktop Styles */
-/* FOOTER */
+/* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
   .intro-container {
     margin-top: 250px;
@@ -433,8 +436,110 @@ h1 span.features-special {
     margin-right: 100px;
     margin-left: 100px;
   }
+  .intro-container h2 {
+    font-size: 2rem;
+  }
+  .intro-container h1 {
+    font-size: 4rem;
+  }
+  p span.features-special {
+    font-size: 2rem;
+  }
+  h1 span.features-special {
+    font-size: 5rem;
+  }
 }
 
+/*******************************/
+/*****ABOUT MAIN CONTENT******/
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 200px;
+}
+
+.about-child {
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.about-info-content {
+  display: inline-block;
+}
+
+.info-container {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.info-child {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.skills-container, .ed-container {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.skills-child, .ed-child {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+/* Tablet Styles */
+/** MAIN CONTENT */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .about-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .info-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .skills-container, .ed-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .skills-child, .ed-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+/* Desktop Styles */
+/* MAIN CONTENT */
 /* Mobile Styles */
 /* Footer */
 .footer-container {

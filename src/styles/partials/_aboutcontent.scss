@@ -1,0 +1,101 @@
+/*******************************/
+
+ /*****ABOUT MAIN CONTENT******/
+
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    margin-top: 200px;  
+}
+
+.about-child {
+    
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.about-info-content {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.info-container {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;  
+}
+
+.info-child {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.skills-container, .ed-container  {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;  
+}
+
+.skills-child, .ed-child {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+                       
+
+
+
+
+
+
+
+
+
+/* Tablet Styles */ /** MAIN CONTENT */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  
+    .about-child {
+        display: flex;
+        justify-content: flex-start;  
+       
+    }
+
+
+
+.info-child {
+    display: flex;
+    justify-content: flex-start;  
+}
+
+.skills-container, .ed-container  {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skills-child, .ed-child {
+    display: flex;
+    justify-content: flex-start;  
+ 
+}
+      
+}
+
+/* Desktop Styles */ /* MAIN CONTENT */
+@media only screen and (min-width: 996px) {
+
+  
+
+}

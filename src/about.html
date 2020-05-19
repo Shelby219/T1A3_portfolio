@@ -5,149 +5,159 @@
         <meta name="author" content="Shelby El-rassi">
         <title>Shelby El-rassi ABOUT ME</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Jost:ExtraLight);" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet"  href="./src/styles/style.css">-->
+        <link rel="stylesheet"  href="./styles/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/7edf7d6684.js" crossorigin="anonymous"></script>
     </head>
   
     <body>
         <header>
-                <!-- Header Site Navigator -->
-                <img width = 10% src="./imgs/Letter_logo.png">
-                    <nav class="menu"> 
-                        <ul> 
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a> 
-                            </li>
-                            <li>
-                                <a href="#">My Work</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul> 
-                    </nav>
-                </header>
+            <!-- Header Site Navigator -->
+            <nav class="Navbar">
+                <div class="Navbar__Link Navbar__Link-brand">
+                  <a href="index.html"><img src="./imgs/Letter_logo.png" alt = "Shelby El-rassi Initial Logo"></a>
+                 </div>
+                 <div class="Navbar__Link Navbar__Link-toggle">
+                   <i class="fas fa-bars"></i> <!-- Burger Menu Icon from Font Awesome-->
+                 </div>
+                    <ul class="Navbar__Items Navbar__Items--right">
+                        <li class="Navbar__Link">
+                        <a class = "item" href="src/about.html">About</a> 
+                        </li>
+                        <li class="Navbar__Link">
+                        <a class = "item" href="src/mywork.html">My Work</a>
+                        </li>
+                        <li class="Navbar__Link">
+                        <a  class = "item" href="src/blog.html">Blog</a>
+                        </li>
+                        <li class="Navbar__Link">
+                        <a  class = "item" href="src/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
                 <main>
                     <!-- About me  -->
-                    <section>
-                        <div> 
-                        <h2>About me</h2>
+                    <section class = "about-container">
+                        <div class = "about-child"> 
+                        <h2>About me.</h2>
+                        
+                            <div class = "about-child" >
+                                <div class = "about-info-content"> 
+                                    <p>Due to graduate from Coder Academy in January 2021, I am a budding software developer, who loves creativity and problem solving. </p>
+                                    <br>
+                                    <p>My studies at Coder Academy result in an accredited Diploma of Information Technology. Technologies learnt are HTML, CSS, Ruby, Rails, Git, JavaScript, APIs, MongoDB, Node.js, Mongoose, Express.js, React and Redux. Important soft skills learnt are agile methodology, user experience and development tools.</p>
+                                    <br>
+                                    <p>My interest in design and creativity leans my direction towards web development, particularly front end, however my passion for learning involves all software development facets. </p>
+                                    <br>
+                                    <p>Previously I was working in administration and accounting for the last 8 years, and before that I was a hairdresser. These roles were a part of my journey in finding satisfaction for both my personality traits, creative and technical. Which is the reason I decided to pursue coding as a career and become a developer.</p>
+                                    <br>
+                                    <p>Currently my goal is the complete my studies at Coder Academy, gain work experience, then ultimate secure my first junior developer job role.  </p>
+                                    <br>
+                                    <p>These days I enjoy spending my free time walking/hiking and keeping active or sketching and painting, practicing my illustrative skills.</p>
+                                </div>
+                            </div>
                         </div>
-
-
-                    <div>
-                        <p>Due to graduate from Coder Academy in January 2021, I am a budding software developer, who loves creativity and problem solving. </p>
-                        <p>My studies at Coder Academy result in an accredited Diploma of Information Technology. Technologies learnt are HTML, CSS, Ruby, Rails, Git, JavaScript, APIs, MongoDB, Node.js, Mongoose, Express.js, React and Redux. Important soft skills learnt are agile methodology, user experience and development tools.</p>
-                        <p>My interest in design and creativity leans my direction towards web development, particularly front end, however my passion for learning involves all software development facets. </p>
-                        <p>Previously I was working in administration and accounting for the last 8 years, and before that I was a hairdresser. These roles were a part of my journey in finding satisfaction for both my personality traits, creative and technical. Which is the reason I decided to pursue coding as a career and become a developer.</p>
-                        <p>Currently my goal is the complete my studies at Coder Academy, gain work experience, then ultimate secure my first junior developer job role.  </p>
-                        <p>These days I enjoy spending my free time walking/hiking and keeping active or sketching and painting, practicing my illustrative skills.</p>
                     </section>
                     
             
                     <!--Education -->
-                    <section>
-                      <h3>Education</h3>
-                      <ul>
-                          <li>
-                              <div>Diploma of IT</div>
-                              <div>Coder Academy</div>
-                              <div>2020-2021</div>
-                            </li>
-                          <li>
-                              <div>Certificate 4 in Accounting</div>
-                              <div>Australian Training School</div>
-                              <div> 2015</div>
-                            </li>
-                          <li>
-                            <div> Certificate 3 in Hairdressing</div>
-                            <div>Brisbane School of Hairdressing</div>
-                            <div>2012</div>
-                          </li>
-                      </ul>
-                    </section>
-
-                    <!--Skills -->
-                    <section>
-                        <h3>Skills</h3>
+                    <section class = "info-container">
+                        <div class = "info-child ed-container">
+                            <h3 class = "ed-child" >Education</h3>
+                            <ul>
+                                <li class = "ed-child">
+                                    <div>Diploma of IT</div>
+                                    <div>Coder Academy</div>
+                                    <div>2020-2021</div>
+                                    </li>
+                                <li class = "ed-child">
+                                    <div>Certificate 4 in Accounting</div>
+                                    <div>Australian Training School</div>
+                                    <div> 2015</div>
+                                    </li>
+                                <li class = "ed-child">
+                                    <div> Certificate 3 in Hairdressing</div>
+                                    <div>Brisbane School of Hairdressing</div>
+                                    <div>2012</div>
+                                </li>
+                            </ul>
+                        </div>
+                      <!--Skills -->
+                    <div class = "info-child skills-container" >
+                        <h3 class = "skills-child">Skills</h3>
                         <ul>
-                            <li>
+                            <li class = "skills-child">
                                 <strong> Web Technologies</strong>
-                                <div>CSS3, HTML5</div>
+                                <div>CSS3, HTML5, SASS</div>
+                                <i class="devicon-html5-plain-wordmark"></i>
+                                <i class="devicon-css3-plain-wordmark"></i>
+                                <i class="devicon-sass-original"></i>
                             </li>
-                            <li>
+                            <li class = "skills-child">
                                 <strong> Programming Languages </strong>
                                 <div> Ruby </div>
+                                <i class="devicon-ruby-plain-wordmark"></i>
                             </li>
-                            <li>
+                            <li class = "skills-child">
                                 <strong>Additional Skills</strong>
                                 <div>Git, Trello, Procreate, Wireframing, Xero, Smartsheet</div>
+                                <i class="devicon-git-plain-wordmark"></i>
+                                <i class="devicon-github-plain-wordmark"></i>
+                                <i class="devicon-trello-plain-wordmark"></i>
                             </li>
                         </ul>
                         
             
+                    </div>
+
+
+
+
                     </section>
+
+                   
 
                 </main>
 
+                    <footer >
+                        <div class = "footer-part1-container">
+                            <p class = "footer-part1 " >Hey!</p> 
+                        </div>
+                            <div class = "footer-container">
+                                    <div class = "footer-part2">
+                                        <p> Thanks for reaching the bottom of this page. There is more <a class ="footer-links"  href="src/about.html">about me</a> and <a class ="footer-links"  href="src/mywork.html"> my work </a> if you would like to learn more. </p>
+                                    </div>
+                                    <div class = "footer-part3">
+                                        <p>Alternatively, check out this fancy sheet of paper <a class ="footer-links" href="RESUME PDF"> Résumé</a></p>
+                                        
+                                    </div>
+                                    <div class = "footer-part4"> 
+                                        <p>Want to get in touch? <a class ="footer-links"  href="EMAIL LINK">shelbyelrassi@gmail.com</a></p>   
+                                    </div>
+                                <div class = "footer-part5">
+                                    <p>Find me Elsewhere....</p>
+                                    <div></div>
+                                    <ul class="footer-icons">
+                                        <!-- icons from https://fontawesome.com -->
+                                        <li><a class="icons" href="https://github.com/Shelby219"><i class="fab fa-github" title="link to Github"></i></a></li>
+                                        <li><a class="icons" href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
+                                        <li><a class="icons" href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
+                                        <li><a class="icons" href="https://www.linkedin.com/in/shelby-el-rassi-693738195/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                    <div class="footer-base" >
+                                        <p> © 2020 </p>
+                                        <a href="EMAIL LINK">Back To Top</a>
+                                    </div>  
+                            </div> 
+                    </footer>
 
-
-
-                    <br>
-                    <br>
-                <footer>
-                    <div>
-                        Hey!
-                    </div>
-                    <div>
-                        <p> Thanks for reaching the bottom of this page. There is more about me and my work if you would like to learn more. </p>
-                    </div>
-                    <div>
-                        <p>Alternatively, check out this fancy sheet of paper</p>
-                        <a href="RESUME PDF">Résumé</a>
-                    </div>
-                    <div>
-                        <p>Want to get in touch?</p>
-                        <a href="EMAIL LINK">shelbyelrassi@gmail.com</a>
-                    </div>
-                    <div>
-                        <p>Find me Elsewhere....</p>
-                    </div>
-                        <ul> 
-                            <li>
-                                <img width = 10% src="./imgs/Linked In.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./imgs/GitHub.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./imgs/Codenpen.png">
-                            </li>
-                            <li>
-                                <img width = 10% src="./imgs/Twitter.png">
-                            </li>
-                        </ul> 
-
-                    <div>
-                    <p> © 2020 </p>
-                    </div>
-                    <div><a href="EMAIL LINK">Back To Top</a></div>    
-                </footer>
-
-                <aside>
-                    <div>
-
-                    </div>
-
-                </aside>
-   
+                
+                <script src="/src/nav.js"></script>
     </body>
         	
 </html>
