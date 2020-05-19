@@ -1,0 +1,82 @@
+/* menu bar area drop down*/
+  
+.Navbar {
+    background-color: white;
+    display: flex;
+    padding: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .Navbar__Link {
+    padding-right: 8px;
+    list-style: none;
+    
+  }
+  .Navbar__Link-brand img {
+    width: 50px;
+  }
+
+  .Navbar__Items {
+    display: flex;
+    text-decoration: none;
+  }
+  .item {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    margin-right: 50px;
+    padding: 10px;
+  }
+  .item:hover {
+    background-color: #F4DBDB;
+    border-radius: 30px; 
+    padding: 10px;
+    cursor: pointer;
+    color: darkblue;
+  }
+  
+  .Navbar__Items--right {
+    margin-left:auto;
+    text-decoration: none;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+      text-decoration: none;
+    }
+    .Navbar__Items {
+      display:none;
+    }
+    .Navbar__Items--right {
+      margin-left:0;
+      text-align: center;
+    }
+    .Navbar__ToggleShow {
+      display: flex;
+    }
+    .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+
+     .fa-bars{
+      font-size: 25px;   
+      margin-top: 5px;   
+     }
+     .item {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;  /*****EDIT THIS FOR BETTER NAV BAR**/
+      }
+  }

@@ -88,7 +88,7 @@ header img {
       cursor: pointer;
      } 
 
-     .Navbar__Link-toggle i{
+     .fa-bars{
       font-size: 25px;   
       margin-top: 5px;   
      }
