@@ -237,7 +237,6 @@
 
 /* OBJECTS */
 .bubble {
-  background-image: url("https://images.unsplash.com/photo-1588097237448-45f7aadebae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   border-radius: 50%;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
@@ -247,15 +246,7 @@
 }
 
 .bubble:after {
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 12+ */
-  /* IE10+ */
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
   border-radius: 50%;
   -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
@@ -467,37 +458,81 @@ h1 span.features-special {
 
 .about-child {
   padding: 10px;
-  font-size: 0.75rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.about-child h2 {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.about-child h3 {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #0F9B9B;
 }
 
 .about-info-content {
   display: inline-block;
+  margin-top: 50px;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .info-container {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   padding: 0;
   margin: 0;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .info-child {
-  display: inline-block;
-  padding: 10px;
   font-size: 0.75rem;
 }
 
 .skills-container, .ed-container {
   display: inline-block;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-top: 50px;
 }
 
+.skills-container ul, .ed-container ul {
+  list-style: none;
+}
+
+.info-container h3 {
+  font-size: 1.5rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
 .skills-child, .ed-child {
-  display: inline-block;
-  padding: 10px;
-  font-size: 0.75rem;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.skills-child div {
+  padding-top: 20px;
+}
+
+.skills-icons {
+  font-size: 50px;
+  color: #0F9B9B;
 }
 
 /* Tablet Styles */
@@ -540,6 +575,17 @@ h1 span.features-special {
 
 /* Desktop Styles */
 /* MAIN CONTENT */
+@media only screen and (min-width: 996px) {
+  .about-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 /* Mobile Styles */
 /* Footer */
 .footer-container {
