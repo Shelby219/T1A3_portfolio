@@ -456,25 +456,25 @@ h1 span.features-special {
   margin-top: 200px;
 }
 
-.about-child {
+.about-child, .about-child h2 {
   padding: 10px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .about-child h2 {
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
   font-family: 'Abril Fatface', cursive;
 }
 
-.about-child h3 {
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 1rem;
+.about-child h2 span {
   color: #0F9B9B;
+  font-size: 2rem;
+}
+
+.about-child h2 p {
+  font-size: 0.9rem;
+  color: #0F9B9B;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-info-content {
@@ -494,7 +494,6 @@ h1 span.features-special {
           flex-flow: row wrap;
   padding: 0;
   margin: 0;
-  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -545,31 +544,18 @@ h1 span.features-special {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .info-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .info-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .skills-container, .ed-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-  .skills-child, .ed-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -583,6 +569,18 @@ h1 span.features-special {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .info-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .info-child {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -785,5 +783,11 @@ header {
 
 header img {
   width: 2.5em;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
 }
 /*# sourceMappingURL=main.css.map */
