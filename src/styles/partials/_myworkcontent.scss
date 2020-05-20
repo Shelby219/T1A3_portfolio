@@ -1,0 +1,67 @@
+
+ /*****MY WORK MAIN CONTENT******/
+
+.completed-projects {
+
+
+}
+
+.completed-projects img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 3px solid #F4DBDB;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.completed-projects ul li {
+    list-style: none;   
+}
+.project-description {
+    padding: 30px 15px 30px 15px;
+    
+}
+.project-description a{
+    text-decoration: none;  
+}
+
+ .currently-container {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-top: 50px;  
+    
+}
+.currently-container ul {
+    list-style: none;
+}
+.currently-child{
+    padding: 20px;
+    margin-right: 10px; 
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.currently-child div {
+    padding-top: 20px;
+}
+
+/* Tablet Styles */ /** MY WORK CONTENT */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .completed-projects img {
+        
+    
+    }
+      
+}
+/* Desktop Styles */ /* CORE CONTENT */
+@media only screen and (min-width: 996px) {
+
+    
+    }

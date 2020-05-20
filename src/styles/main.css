@@ -441,57 +441,7 @@ h1 span.features-special {
   }
 }
 
-/*******************************/
 /*****ABOUT MAIN CONTENT******/
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding: 0;
-  margin: 0;
-  margin-top: 200px;
-}
-
-.about-child, .about-child h2 {
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.about-child h2 p {
-  font-size: 0.9rem;
-  color: #0F9B9B;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.about-info-content {
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-.info-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 100px;
-}
-
-.info-child {
-  font-size: 0.75rem;
-}
-
 .skills-container, .ed-container {
   display: inline-block;
   padding: 10px;
@@ -502,11 +452,6 @@ h1 span.features-special {
 
 .skills-container ul, .ed-container ul {
   list-style: none;
-}
-
-.info-container h3 {
-  font-size: 1.5rem;
-  font-family: 'Abril Fatface', cursive;
 }
 
 .skills-child, .ed-child {
@@ -525,57 +470,56 @@ h1 span.features-special {
   color: #0F9B9B;
 }
 
+/*******************************/
+/*****MY WORK MAIN CONTENT******/
+.completed-projects img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 3px solid #F4DBDB;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.completed-projects ul li {
+  list-style: none;
+}
+
+.project-description {
+  padding: 30px 15px 30px 15px;
+}
+
+.project-description a {
+  text-decoration: none;
+}
+
+.currently-container {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.currently-container ul {
+  list-style: none;
+}
+
+.currently-child {
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.currently-child div {
+  padding-top: 20px;
+}
+
 /* Tablet Styles */
-/** MAIN CONTENT */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .about-child h2 {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .about-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: -50px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .info-container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .info-child {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-}
-
+/** MY WORK CONTENT */
 /* Desktop Styles */
-/* MAIN CONTENT */
-@media only screen and (min-width: 996px) {
-  .about-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-top: -50px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .info-container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .info-child {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-}
-
+/* CORE CONTENT */
 /* Mobile Styles */
 /* Footer */
 .footer-container {
@@ -792,5 +736,111 @@ main {
 .page-headings span {
   color: #0F9B9B;
   font-size: 2rem;
+}
+
+/*****CORE FOR MOST PAGE FORMATTING******/
+.core-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 200px;
+}
+
+.core-child, .core-child h2 {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.core-child h2 p {
+  font-size: 0.9rem;
+  color: #0F9B9B;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.core-info-content {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.info-child {
+  font-size: 0.75rem;
+}
+
+.info-container h3 {
+  font-size: 1.5rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* Tablet Styles */
+/** CORE CONTENT */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .core-child h2 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .core-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .info-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .info-child {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* Desktop Styles */
+/* CORE CONTENT */
+@media only screen and (min-width: 996px) {
+  .core-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .info-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .info-child {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
