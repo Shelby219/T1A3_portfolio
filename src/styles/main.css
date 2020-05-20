@@ -542,7 +542,11 @@ h1 span.features-special {
 /** MY WORK CONTENT */
 /* Desktop Styles */
 /* CORE CONTENT */
-/*****MY WORK MAIN CONTENT******/
+/*****BLOG MAIN CONTENT******/
+.searchbar {
+  text-align: right;
+}
+
 .blog-container img {
   max-width: 100%;
   height: auto;
@@ -596,6 +600,27 @@ h1 span.features-special {
 /** MY WORK CONTENT */
 /* Desktop Styles */
 /* CORE CONTENT */
+/*****CONTACT MAIN CONTENT******/
+#name, #_replyto, #message {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 600px;
+}
+
+#message {
+  height: 300px;
+}
+
+#email-form input [type="text"] {
+  background-color: #00C5BE;
+  color: #000;
+}
+
 /* Mobile Styles */
 /* Footer */
 .footer-container {
@@ -801,6 +826,7 @@ main {
   margin: auto;
   width: 100%;
   max-width: 1000px;
+  margin-bottom: 200px;
 }
 
 /*****HEADINGS FOR EACH PAGE FORMATTING******/
