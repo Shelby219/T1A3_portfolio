@@ -1,7 +1,6 @@
 /*******************************/
 
  /*****ABOUT MAIN CONTENT******/
-
 .about-container {
     display: flex;
     flex-flow: row wrap;
@@ -15,15 +14,6 @@
     margin-right: 10px; 
     margin-left: 10px; 
 }
-
-.about-child h2 { 
-    font-family: 'Abril Fatface', cursive;
-}
-
-.about-child h2 span {
-    color: #0F9B9B;
-    font-size: 2rem;
-    }
 
 .about-child h2 p {
     font-size: 0.9rem;
@@ -99,13 +89,16 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
   
-    
-    .about-child {
+ .about-child h2 { 
+    margin-right: 20px; 
+    margin-left: 20px; 
+    }
+.about-child {
         display: flex;
-        justify-content: flex-start;   
         margin-top: -50px;
         margin-right: 20px; 
         margin-left: 20px; 
+       
     }
     .info-container {
         justify-content: space-evenly;
@@ -120,11 +113,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 /* Desktop Styles */ /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
-    .about-container {
-        
-
-
-    }
 
     .about-child {
         display: flex;

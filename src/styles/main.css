@@ -462,15 +462,6 @@ h1 span.features-special {
   margin-left: 10px;
 }
 
-.about-child h2 {
-  font-family: 'Abril Fatface', cursive;
-}
-
-.about-child h2 span {
-  color: #0F9B9B;
-  font-size: 2rem;
-}
-
 .about-child h2 p {
   font-size: 0.9rem;
   color: #0F9B9B;
@@ -537,13 +528,14 @@ h1 span.features-special {
 /* Tablet Styles */
 /** MAIN CONTENT */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .about-child h2 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .about-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     margin-top: -50px;
     margin-right: 20px;
     margin-left: 20px;
@@ -789,5 +781,16 @@ main {
   margin: auto;
   width: 100%;
   max-width: 1000px;
+}
+
+/*****HEADINGS FOR EACH PAGE FORMATTING******/
+.page-headings {
+  width: 100%;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.page-headings span {
+  color: #0F9B9B;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
