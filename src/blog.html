@@ -5,35 +5,39 @@
         <meta name="author" content="Shelby El-rassi">
         <title>Shelby El-rassi BLOG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Jost:ExtraLight);" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="./src/styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <!--<link rel="stylesheet"  href="./src/styles/style.css">-->
+        <link rel="stylesheet"  href="./styles/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/7edf7d6684.js" crossorigin="anonymous"></script>
     </head>
-  
     <body>
-        <header>
-                <!-- Header Site Navigator -->
-                <img width = 10% src="./imgs/Letter_logo.png">
-                    <nav class="menu"> 
-                        <ul> 
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a> 
-                            </li>
-                            <li>
-                                <a href="#">My Work</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul> 
-                    </nav>
-                </header>
+        <header>    
+            <!-- Header Site Navigator -->
+            <nav class="Navbar">
+                <div class="Navbar__Link Navbar__Link-brand">
+                  <a href="../index.html"><img src="./imgs/Letter_logo.png" alt = "Shelby El-rassi Initial Logo"></a>
+                 </div>
+                 <div class="Navbar__Link Navbar__Link-toggle">
+                   <i class="fas fa-bars"></i> <!-- Burger Menu Icon from Font Awesome-->
+                 </div>
+                    <ul class="Navbar__Items Navbar__Items--right">
+                        <li class="Navbar__Link">
+                        <a class = "item" href="about.html">About</a> 
+                        </li>
+                        <li class="Navbar__Link">
+                        <a class = "item" href="mywork.html">My Work</a>
+                        </li>
+                        <li class="Navbar__Link">
+                        <a  class = "item" href="blog.html">Blog</a>
+                        </li>
+                        <li class="Navbar__Link">
+                        <a  class = "item" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
                 <main>
 
@@ -51,90 +55,83 @@
                     </section>
 
                             <!--BLOG POSTS -->
-
-                    <section class="border blog-list">
-                        <div class="inner-container">
-                            <h3>Latest Blog Posts: </h3>
-                                <ul class="post-list no-bullet">
-                                    <li class="border-bottom">
-                                    <a><img width = 10% src="./imgs/se_paints.jpg"> </a>
-                                    <a class="transition-link" href='/blogs/blog1.html'><h3>BLOG POST 1</h3></a>
-                                    <a href='/blogs/blog1.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
-                                    <h4>May. 16, 2020</h4>
-                                </li>
-
-                                    <li class="border-bottom">
-                                    <a><img width = 10% src="./imgs/se_paints.jpg"> </a>
-                                    <a class="transition-link" href='/blogs/blog2.html'><h3>BLOG POST 2</h3></a>
-                                    <a href='/blogs/blog2.html'class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
-                                    <h4>May. 17, 2020</h4>
-                                </li>
-
-                                    <li class="border-bottom">
-                                    <a><img width = 10% src="./imgs/se_paints.jpg"> </a>
-                                    <a class="transition-link" href='/blogs/blog3.html'><h3>BLOG POST 3</h3></a>
-                                    <a href='/blogs/blog3.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
-                                    <h4>May. 18, 2020</h4>
-                                </li>
-
-                                    <li class="border-bottom">
-                                    <a><img width = 10% src="./imgs/se_paints.jpg"> </a>
-                                    <a class="transition-link" href='/blogs/blog4.html'><h3>BLOG POST 4 </h3></a>
-                                    <a href='/blogs/blog4.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
-                                    <h4>May. 19, 2020</h4>
-                                </li>
-
-                                    <li class="border-bottom">
-                                    <a><img width = 10% src="./imgs/se_paints.jpg"> </a>   
-                                    <a class="transition-link" href='/blogs/blog5.html'><h3>BLOG POST 5 </h3></a>
-                                    <a href='/blogs/blog5.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
-                                    <h4>May. 20, 2020</h4>
-                                </li>
-                                </ul>
-                        </div>
-                        </section>
-
-
+                            <section class = "core-container">
+                                <div class = "core-child"> 
+                                        <h2 class = "page-headings" >My Thoughts<span>.</span><p>and a space to share them</p></h2>
+                                        <div class = "core-child" >
+                                            <div class = "core-info-content blog-container"> 
+                                                <ul class="blog-posts">
+                                                <li>
+                                                    <a><img src="./imgs/unsplash paints.jpg" alt = "Blog Post picture"> </a>
+                                                    <a class="transition-link" href='/blogs/blog1.html'><h4>BLOG POST 1</h4></a>
+                                                    <a href='/blogs/blog1.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+                                                    <p class="date">May. 16, 2020</p>
+                                                </li>
+                                                <li>
+                                                    <a><img src="./imgs/unsplash paints.jpg" alt = "Blog Post picture"> </a>
+                                                    <a class="transition-link" href='/blogs/blog2.html'><h4>BLOG POST 2</h4></a>
+                                                    <a href='/blogs/blog2.html'class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+                                                    <p class="date">May. 17, 2020</p>
+                                                </li>
+                                                    <li>
+                                                    <a> <img src="./imgs/unsplash paints.jpg" alt = "Blog Post picture">  </a>
+                                                    <a class="transition-link" href='/blogs/blog3.html'><h4>BLOG POST 3</h4></a>
+                                                    <a href='/blogs/blog3.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+                                                    <p class="date">May. 18, 2020</p>
+                                                </li>
+                                                <li>
+                                                    <a> <img src="./imgs/unsplash paints.jpg" alt = "Blog Post picture">  </a>
+                                                    <a class="transition-link" href='/blogs/blog4.html'><h4>BLOG POST 4 </h4></a>
+                                                    <a href='/blogs/blog4.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+                                                    <p class="date">May. 19, 2020</p>
+                                                </li>
+        
+                                                <li>
+                                                    <a> <img src="./imgs/unsplash paints.jpg" alt = "Blog Post picture"> </a>   
+                                                    <a class="transition-link" href='/blogs/blog5.html'><h4>BLOG POST 5</h4></a>
+                                                    <a href='/blogs/blog5.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+                                                    <p class="date">May. 20, 2020</p>
+                                                </li>
+                                        </ul>
+                                            </div>
+                                        </div>
+                                </div>
+                            </section>
                 </main>
 
 
-
-
-
-                    <br>
-                    <br>
-                <footer>
-                    <div>
-                        Hey!
-                    </div>
-                    <div>
-                        <p> Thanks for reaching the bottom of this page. There is more about me and my work if you would like to learn more. </p>
-                    </div>
-                    <div>
-                        <p>Alternatively, check out this fancy sheet of paper</p>
-                        <a href="RESUME PDF">Résumé</a>
-                    </div>
-                    <div>
-                        <p>Want to get in touch?</p>
-                        <a href="EMAIL LINK">shelbyelrassi@gmail.com</a>
-                    </div>
-                    <div>
-                        <p>Find me Elsewhere....</p>
-                    </div>
-                        <ul class="">
-                            <!-- icons from https://fontawesome.com -->
-                            <li><a href="https://github.com/Shelby219"><i class="fab fa-github" title="link to Github"></i></a></li>
-                            <li><a href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
-                            <li><a href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/shelby-el-rassi-693738195/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
-                        </ul>
-        
-
-                    <div>
-                    <p> © 2020 </p>
-                    </div>
-                    <div><a href="EMAIL LINK">Back To Top</a></div>    
-                </footer>
+                    <footer >
+                        <div class = "footer-part1-container">
+                            <p class = "footer-part1 " >Hey!</p> 
+                        </div>
+                            <div class = "footer-container">
+                                    <div class = "footer-part2">
+                                        <p> Thanks for reaching the bottom of this page. There is more <a class ="footer-links"  href="src/about.html">about me</a> and <a class ="footer-links"  href="src/mywork.html"> my work </a> if you would like to learn more. </p>
+                                    </div>
+                                    <div class = "footer-part3">
+                                        <p>Alternatively, check out this fancy sheet of paper <a class ="footer-links" href="RESUME PDF"> Résumé</a>.</p>
+                                        
+                                    </div>
+                                    <div class = "footer-part4"> 
+                                        <p>Want to get in touch? <a class ="footer-links"  href="EMAIL LINK">shelbyelrassi@gmail.com</a></p>   
+                                    </div>
+                                <div class = "footer-part5">
+                                    <p>Find me Elsewhere....</p>
+                                    <div></div>
+                                    <ul class="footer-icons">
+                                        <!-- icons from https://fontawesome.com -->
+                                        <li><a class="icons" href="https://github.com/Shelby219"><i class="fab fa-github" title="link to Github"></i></a></li>
+                                        <li><a class="icons" href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
+                                        <li><a class="icons" href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
+                                        <li><a class="icons" href="https://www.linkedin.com/in/shelby-el-rassi-693738195/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                    <div class="footer-base" >
+                                        <p> © 2020 </p>
+                                        <a href="EMAIL LINK">Back To Top</a>
+                                    </div>  
+                            </div> 
+                    </footer>
 
                 <aside>
                     <div>

@@ -542,6 +542,60 @@ h1 span.features-special {
 /** MY WORK CONTENT */
 /* Desktop Styles */
 /* CORE CONTENT */
+/*****MY WORK MAIN CONTENT******/
+.blog-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 3px solid #F4DBDB;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.blog-container ul li {
+  list-style: none;
+  border-bottom: 3px solid #0F9B9B;
+  border-bottom-style: dotted;
+  margin-top: 30px;
+}
+
+.blog-posts a {
+  text-decoration: none;
+}
+
+.blog-posts a h4 {
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.read-more {
+  color: #0F9B9B;
+}
+
+.date {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.arrow-right {
+  color: #0F9B9B;
+  font-size: 1rem;
+}
+
+.read-more:hover, .arrow-right:hover {
+  background-color: #F4DBDB;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  color: darkblue;
+}
+
+/* Tablet Styles */
+/** MY WORK CONTENT */
+/* Desktop Styles */
+/* CORE CONTENT */
 /* Mobile Styles */
 /* Footer */
 .footer-container {
