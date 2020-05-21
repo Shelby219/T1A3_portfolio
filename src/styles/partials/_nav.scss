@@ -27,14 +27,20 @@
     margin-right: 50px;
     padding: 10px;
   }
+
   .item:hover {
     background-color: #F4DBDB;
     border-radius: 30px; 
     padding: 10px;
     cursor: pointer;
     color: darkblue;
+    transition: width 1s ease;
   }
   
+  
+
+
+
   .Navbar__Items--right {
     margin-left:auto;
     text-decoration: none;

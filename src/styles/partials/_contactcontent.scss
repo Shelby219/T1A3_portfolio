@@ -1,25 +1,24 @@
 
  /*****CONTACT MAIN CONTENT******/
 
+ 
 #name, #_replyto, #message {
         display: block;
         padding: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0px 20px 0px;
         border: 1px solid #ccc;
         width: 600px;
+        align-self: left;
 }
 #message {
         height: 300px;     
 }
 
- .contact-box {
-       
 
- }
 
  #email-form {
-         
+        margin-right: 20px; 
+        margin-left: 20px; 
  }
  .form-label{
      background-color:  #F4DBDB;
@@ -27,13 +26,13 @@
      font-size: 1rem;
  }
 
-
  input[type=submit] {
         background-color: #0F9B9B;
         color: white;
         padding: 12px 20px;
         border-radius: 30px; 
-        padding: 10px;
+        padding: 10px 20px 10px 20px;
+        
       }
  input[type=submit]:hover {
         background-color: #F4DBDB;
@@ -43,3 +42,29 @@
         color: darkblue;
       }
 
+/* Mobile Styles */ /** CONTACT CONTENT */
+@media only screen 
+and (max-device-width: 767px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+        #name, #_replyto, #message {
+                width: 275px;
+        }
+      
+}
+/* Tablet Styles */ /** CONTACT CONTENT */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+        #name, #_replyto, #message {
+                width: 400px;
+        }
+        
+      
+}
+/* Desktop Styles */ /* CONTACT CONTENT */
+@media only screen and (min-width: 996px) {
+       
+        
+    
+    }

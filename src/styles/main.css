@@ -1,6 +1,75 @@
 /*$section-bkgd-color: aqua;
 $hover-color: green;
 $accent-color: red;*/
+/*****ANIMATIONS******/
+/*****SLIDE IN ANIMATION******/
+.intro-container {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*****FADING ANIMATION******/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
 /* menu bar area drop down*/
 .Navbar {
   background-color: white;
@@ -43,6 +112,8 @@ $accent-color: red;*/
   padding: 10px;
   cursor: pointer;
   color: darkblue;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
 }
 
 .Navbar__Items--right {
@@ -607,14 +678,21 @@ h1 span.features-special {
 #name, #_replyto, #message {
   display: block;
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 0px;
   border: 1px solid #ccc;
   width: 600px;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
 }
 
 #message {
   height: 300px;
+}
+
+#email-form {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .form-label {
@@ -628,7 +706,7 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 input[type=submit]:hover {
@@ -639,6 +717,24 @@ input[type=submit]:hover {
   color: darkblue;
 }
 
+/* Mobile Styles */
+/** CONTACT CONTENT */
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  #name, #_replyto, #message {
+    width: 275px;
+  }
+}
+
+/* Tablet Styles */
+/** CONTACT CONTENT */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #name, #_replyto, #message {
+    width: 400px;
+  }
+}
+
+/* Desktop Styles */
+/* CONTACT CONTENT */
 /* Mobile Styles */
 /* Footer */
 .footer-container {
@@ -870,7 +966,8 @@ main {
           flex-flow: row wrap;
   padding: 0;
   margin: 0;
-  margin-top: 200px;
+  margin-top: 250px;
+  margin-bottom: 100px;
 }
 
 .core-child, .core-child h2 {
