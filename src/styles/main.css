@@ -1,3 +1,6 @@
+/*$section-bkgd-color: aqua;
+$hover-color: green;
+$accent-color: red;*/
 /* menu bar area drop down*/
 .Navbar {
   background-color: white;
@@ -606,9 +609,7 @@ h1 span.features-special {
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  border: 1px solid #ccc;
   width: 600px;
 }
 
@@ -616,9 +617,26 @@ h1 span.features-special {
   height: 300px;
 }
 
-#email-form input [type="text"] {
-  background-color: #00C5BE;
+.form-label {
+  background-color: #F4DBDB;
   color: #000;
+  font-size: 1rem;
+}
+
+input[type=submit] {
+  background-color: #0F9B9B;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #F4DBDB;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  color: darkblue;
 }
 
 /* Mobile Styles */
