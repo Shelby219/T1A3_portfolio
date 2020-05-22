@@ -7,7 +7,7 @@
   
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
-// ===== Scroll to Top ==== 
+// ===== Scroll to Top ==== //  // ===== Using this piece of code to be able to back to top ==== // 
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
       $('#return-to-top').fadeIn(200);    // Fade in the arrow
