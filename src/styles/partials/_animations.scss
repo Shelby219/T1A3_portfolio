@@ -2,7 +2,7 @@
 /*****ANIMATIONS******/
 
 /*****SLIDE IN ANIMATION******/
-     .intro-container {
+    .Navbar{
         animation-duration: 3s;
         animation-name: slidein;
         }
@@ -17,6 +17,22 @@
             width: 100%;
             }
         }
+/*****SLIDE UP ANIMATION******/
+.intro-container {
+  animation-duration: 3s;
+  animation-name: slideup;
+  }
+
+  @keyframes slideup {
+      from {
+      margin-bottom: 100%;
+      width: 300%;
+      }
+      to {
+      margin-left: 0%;
+      width: 100%;
+      }
+  }
 
 /*****FADING ANIMATION******/
 /* make keyframes that tell the start state and the end state of our object */
