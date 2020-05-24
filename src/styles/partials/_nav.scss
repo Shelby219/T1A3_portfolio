@@ -20,7 +20,6 @@
     text-decoration: none;
   }
   .item {
-    color: $text-color;
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -107,7 +106,7 @@
      }
      .item {
         color: $text-color;
-        background-color: $white-color;
+        background-color: $alternate-color;
         text-decoration: none;
         display: flex;
         justify-content: center;
