@@ -128,7 +128,6 @@ $accent-color: red;*/
 }
 
 /*****FADING ANIMATION******/
-/* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -149,7 +148,6 @@ $accent-color: red;*/
 
 .desktop-container, .core-container {
   -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   animation: fadeIn ease-in 1;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -818,6 +816,8 @@ h1 span.features-special {
 
 .form-label {
   background-color: #F4DBDB;
+  border-radius: 25px;
+  padding: 5px;
   color: black;
   font-size: 1rem;
 }
@@ -828,14 +828,21 @@ input[type=submit] {
   padding: 12px 20px;
   border-radius: 30px;
   padding: 10px 20px 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 input[type=submit]:hover {
   background-color: #F4DBDB;
-  border-radius: 30px;
-  padding: 10px;
   cursor: pointer;
   color: darkblue;
+}
+
+input[type=submit]:active {
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 /* Mobile Styles */
