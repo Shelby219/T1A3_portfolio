@@ -2,38 +2,105 @@
 $hover-color: green;
 $accent-color: red;*/
 /*****ANIMATIONS******/
+/*****NAVBAR LINE ANIMATION******/
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+/*************************/
+/*****Hover ANIMATION******/
+.item-underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.item-underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #F4DBDB;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.item-underline:hover:before, .item-underline:focus:before, .item-underline:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*****LOGO ANIMATION******/
+.Navbar__Link-brand:hover {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+/*************************/
 /*****SLIDE IN ANIMATION******/
-.Navbar {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
+/**    .page-headings{
+        animation-duration: 3s;
+        animation-name: slidein;
+        }
 
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
+        @keyframes slidein {
+            from {
+            margin-left: 100%;
+            width: 300%;
+            }
+            to {
+            margin-left: 0%;
+            width: 100%;
+            }
+        }*/
 /*****SLIDE UP ANIMATION******/
-.intro-container {
+.intro-sec1 {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slideup;
@@ -46,7 +113,6 @@ $accent-color: red;*/
     width: 300%;
   }
   to {
-    margin-left: 0%;
     width: 100%;
   }
 }
@@ -57,7 +123,6 @@ $accent-color: red;*/
     width: 300%;
   }
   to {
-    margin-left: 0%;
     width: 100%;
   }
 }
@@ -65,39 +130,29 @@ $accent-color: red;*/
 /*****FADING ANIMATION******/
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
-.fade-in {
-  opacity: 0;
-  /* make things invisible upon start */
+.desktop-container, .core-container {
   -webkit-animation: fadeIn ease-in 1;
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-}
-
-.fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
 }
 
 /* menu bar area drop down*/
@@ -107,6 +162,7 @@ $accent-color: red;*/
   display: -ms-flexbox;
   display: flex;
   padding: 16px;
+  border-bottom: 3px solid #F4DBDB;
 }
 
 .Navbar__Link {
@@ -132,49 +188,9 @@ $accent-color: red;*/
   display: flex;
   margin-right: 50px;
   padding: 10px;
-  color: #0F9B9B;
+  color: black;
 }
 
-.item:hover {
-  background-color: #F4DBDB;
-  border-radius: 30px;
-  padding: 10px;
-  cursor: pointer;
-  color: darkblue;
-  -webkit-transition: width 1s ease;
-  transition: width 1s ease;
-}
-
-/*****NAV BAR ANIMATION**
-  nav ul li {
-    margin: 0px 50px 0px 0px;
-    padding: 10px;
-    --c: goldenrod; color: var(c); font-size: 16px;
-    border: 0.3em solid var(c); border-radius: 0.5em;
-    width: 12em; height: 3em; text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1em; text-align:center; line-height: 3em;
-    position: relative; overflow: hidden; z-index: 1;
-    transition: 0.5s; margin: 1em;
-  }
-  
-  nav ul li span {
-    position: absolute; width: 25%; height: 100%;
-    background-color: var(-c); transform: translateY(150%);
-    border-radius: 50%; left: calc((var(--n) -1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) -1) * 0.1s);
-    z-index: -1;
-  }
-
-  nav ul li:hover { color:black; }
-
-  nav ul li:hover span { transform: translateY(0) scale(2);}
-  nav ul span:nth-child(1) { --n: 1: }
-  nav ul span:nth-child(2) { --n: 2: }
-  nav ul span:nth-child(3) { --n: 3: }
-  nav ul span:nth-child(4) { --n: 4: }
-/*****NAV BAR ANIMATION**/
 .Navbar__Items--right {
   margin-left: auto;
   text-decoration: none;
@@ -478,12 +494,6 @@ h1 span.features-special {
   border-radius: 30px;
 }
 
-.blog-recent-container h3:hover {
-  background-color: #F4DBDB;
-  cursor: pointer;
-  color: darkblue;
-}
-
 .blog-recent-container h3 a {
   text-decoration: none;
   text-align: right;
@@ -734,6 +744,57 @@ h1 span.features-special {
 /** MY WORK CONTENT */
 /* Desktop Styles */
 /* CORE CONTENT */
+/* Blog posts content*/
+.blog-pic img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 3px solid #F4DBDB;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.blog-posts-main {
+  margin-bottom: 200px;
+  padding-bottom: 100px;
+}
+
+.page-changer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 75px;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.page-changer a:nth-child(1) {
+  padding: 10px;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  text-decoration: none;
+  color: black;
+}
+
+.page-changer a:nth-child(2) {
+  padding: 10px;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  text-decoration: none;
+  color: black;
+}
+
+/* Tablet Styles */
+/** MY WORK CONTENT */
+/* Desktop Styles */
+/* CORE CONTENT */
 /*****CONTACT MAIN CONTENT******/
 #name, #_replyto, #message {
   display: block;
@@ -883,22 +944,11 @@ input[type=submit]:hover {
   font-size: 0.9rem;
 }
 
-.footer-base a:hover {
-  background-color: #F4DBDB;
-  border-radius: 30px;
-}
-
 .footer-links {
   text-decoration: none;
   color: #0F9B9B;
   font-size: 0.85rem;
   font-weight: 600;
-}
-
-.footer-links:hover {
-  text-decoration: none;
-  background-color: #F4DBDB;
-  border-radius: 25px;
 }
 
 /*******************************/

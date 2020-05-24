@@ -4,6 +4,7 @@
     background-color: $white-color;
     display: flex;
     padding: 16px;
+    border-bottom: 3px solid $alternate-color;
   }
 
   .Navbar__Link {
@@ -26,47 +27,9 @@
     display: flex;
     margin-right: 50px;
     padding: 10px;
-    color: $heading-color;
-  }
-.item:hover {
-    background-color: $alternate-color;
-    border-radius: 30px; 
-    padding: 10px;
-    cursor: pointer;
-    color: $hover-color;
-    transition: width 1s ease;
-  }
-  
-/*****NAV BAR ANIMATION**
-  nav ul li {
-    margin: 0px 50px 0px 0px;
-    padding: 10px;
-    --c: goldenrod; color: var(c); font-size: 16px;
-    border: 0.3em solid var(c); border-radius: 0.5em;
-    width: 12em; height: 3em; text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1em; text-align:center; line-height: 3em;
-    position: relative; overflow: hidden; z-index: 1;
-    transition: 0.5s; margin: 1em;
-  }
-  
-  nav ul li span {
-    position: absolute; width: 25%; height: 100%;
-    background-color: var(-c); transform: translateY(150%);
-    border-radius: 50%; left: calc((var(--n) -1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) -1) * 0.1s);
-    z-index: -1;
+    color: $text-color;
   }
 
-  nav ul li:hover { color:black; }
-
-  nav ul li:hover span { transform: translateY(0) scale(2);}
-  nav ul span:nth-child(1) { --n: 1: }
-  nav ul span:nth-child(2) { --n: 2: }
-  nav ul span:nth-child(3) { --n: 3: }
-  nav ul span:nth-child(4) { --n: 4: }
-/*****NAV BAR ANIMATION**/
 
   .Navbar__Items--right {
     margin-left:auto;

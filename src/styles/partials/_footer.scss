@@ -59,23 +59,17 @@
     font-size: 0.9rem;
 }
 
-.footer-base a:hover {
-    background-color: #F4DBDB;
-    border-radius: 30px; 
-}
 
 .footer-links {
     text-decoration: none;
-    color: #0F9B9B;
+    color: $heading-color;
     font-size: 0.85rem;
     font-weight: 600;
+
 }
 
-.footer-links:hover {
-    text-decoration: none;
-    background-color: #F4DBDB;
-    border-radius: 25px;
-}
+
+
 /*******************************/
 
 
