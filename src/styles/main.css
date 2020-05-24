@@ -1057,6 +1057,13 @@ main {
   font-size: 2rem;
 }
 
+.page-headings b {
+  display: block;
+  font-size: 0.9rem;
+  color: #0F9B9B;
+  font-family: "Open Sans", sans-serif;
+}
+
 /*****CORE FOR MOST PAGE FORMATTING******/
 .core-container {
   display: -webkit-box;
@@ -1076,12 +1083,6 @@ main {
   padding: 10px;
   margin-right: 10px;
   margin-left: 10px;
-}
-
-.core-child h2 p {
-  font-size: 0.9rem;
-  color: #0F9B9B;
-  font-family: "Open Sans", sans-serif;
 }
 
 .core-info-content {
