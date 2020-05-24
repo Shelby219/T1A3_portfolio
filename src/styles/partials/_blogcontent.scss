@@ -8,14 +8,14 @@
     max-width: 100%;
     height: auto;
     padding: 5px;
-    border: 3px solid #F4DBDB;
+    border: 3px solid $alternate-color;
     border-radius: 15px;
     margin-top: 10px;
 }
 
 .blog-container  ul li {
     list-style: none;   
-    border-bottom: 3px solid #0F9B9B;
+    border-bottom: 3px solid $heading-color;
     border-bottom-style: dotted;
     margin-top: 30px;
 }
@@ -26,29 +26,29 @@
 
 .blog-posts a h4 {
     font-size: 1.5rem;
-    color: black;
+    color: $text-color;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .read-more {
-    color: #0F9B9B; 
+    color: $heading-color; 
 }
 .date {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .arrow-right {
-    color: #0F9B9B;
+    color: $heading-color;
     font-size: 1rem;
 }
 
 .read-more:hover, .arrow-right:hover {
-    background-color: #F4DBDB;
+    background-color: $alternate-color;
     border-radius: 30px; 
     padding: 10px;
     cursor: pointer;
-    color: darkblue;
+    color: $hover-color;
 }
 
 /* Tablet Styles */ /** MY WORK CONTENT */

@@ -8,14 +8,14 @@
     max-width: 100%;
     height: auto;
     padding: 5px;
-    border: 3px solid #F4DBDB;
+    border: 3px solid $alternate-color;
     border-radius: 15px;
     margin-top: 10px;
 }
 
 .completed-projects ul li {
     list-style: none;   
-    border-bottom: 3px solid #0F9B9B;
+    border-bottom: 3px solid $heading-color;
     border-bottom-style: dotted;
     margin-top: 30px;
 }
@@ -33,15 +33,15 @@
 .project-description h4, .project-description p{
     font-size: 1rem;
     padding: 5px 0px 5px 0px;
-    color: black;
+    color: $text-color;
 }
 
 .project-description h4:hover, .project-description p:hover {
-    background-color: #F4DBDB;
+    background-color: $alternate-color;
     border-radius: 30px; 
     padding: 10px;
     cursor: pointer;
-    color: darkblue;
+    color: $hover-color;
 }
 
  .currently-container {

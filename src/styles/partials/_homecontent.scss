@@ -33,21 +33,22 @@ section div.intro-sec1 img {
 }
 .intro-container h2 {
         font-size: 1.75rem;
-        color: #0F9B9B;
+        color: $heading-color;
     }
 .intro-container h1 {
         font-size: 3rem;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 700;
-    }
+        font-family: $heading-font-family;
+        font-weight: bold;
+}
+    
 
 p span.features-special {
-color: #0F9B9B;
+color:$heading-color;
 font-size: 1.4rem;
 }
 
 h1 span.features-special {
-color: #0F9B9B;
+color: $heading-color;
 font-size: 4rem;
 }
 /*******************************/
@@ -64,28 +65,27 @@ font-size: 4rem;
 
 .blog-recent-container h3 {
     padding: 20px;
-    background-color: #F4DBDB; 
+    background-color: $alternate-color;
     border-radius: 30px; 
 }
 
 .blog-recent-container h3:hover {
-    background-color: #F4DBDB;
+    background-color:$alternate-color;
     cursor: pointer;
-    color: darkblue;
+    color: $hover-color;
 }
 
 .blog-recent-container h3 a {
     text-decoration: none; 
     text-align: right;
-    color:black;
+    color: $text-color;
     
 }
 
 .blog-recent-container h3 a:hover {
-   
-    background-color: #F4DBDB; 
+    background-color:$alternate-color;
     cursor: pointer;
-    color: darkblue;
+    color: $hover-color;
 }
 
 .blog-recent-posts {
@@ -97,8 +97,8 @@ font-size: 4rem;
 .blog-recent-posts a {
     text-decoration: none;
     text-align: left;
-    border-bottom: 1px dashed #0F9B9B;
-    color: black;
+    border-bottom: 1px dashed $heading-color;
+    color: $text-color;
     width: 100%;
     padding: 10px;
 }
@@ -110,7 +110,7 @@ font-style: bold;
 }
 
 .blog-recent-posts strong:hover, .blog-recent-posts a:hover{
-    color: darkblue;
+    color: $hover-color;
     }
 
 .subtitle {

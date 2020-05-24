@@ -21,25 +21,25 @@
         margin-left: 20px; 
  }
  .form-label{
-     background-color:  #F4DBDB;
-     color: #000;
+     background-color:  $alternate-color;
+     color: $text-color;
      font-size: 1rem;
  }
 
  input[type=submit] {
-        background-color: #0F9B9B;
-        color: white;
+        background-color: $heading-color;
+        color: $white-color;
         padding: 12px 20px;
         border-radius: 30px; 
         padding: 10px 20px 10px 20px;
         
       }
  input[type=submit]:hover {
-        background-color: #F4DBDB;
+        background-color: $alternate-color;
         border-radius: 30px; 
         padding: 10px;
         cursor: pointer;
-        color: darkblue;
+        color: $hover-color;
       }
 
 /* Mobile Styles */ /** CONTACT CONTENT */
