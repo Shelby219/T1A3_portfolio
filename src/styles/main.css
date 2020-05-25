@@ -1,29 +1,9 @@
 /*$section-bkgd-color: aqua;
 $hover-color: green;
 $accent-color: red;*/
+/*font-family: 'Playfair Display', serif; font-family: 'Libre Baskerville', serif;*/
 /*****ANIMATIONS******/
 /*****NAVBAR LINE ANIMATION******/
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
-  }
-}
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
-  }
-}
-
 /*************************/
 /*****Hover ANIMATION******/
 .item-underline {
@@ -59,6 +39,9 @@ $accent-color: red;*/
   right: 0;
 }
 
+/*********************************/
+/*****Hover ANIMATION 2******/
+/*********************************/
 /*****LOGO ANIMATION******/
 .Navbar__Link-brand:hover {
   -webkit-animation-name: spin;
@@ -69,6 +52,17 @@ $accent-color: red;*/
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
 }
 
 @keyframes spin {
@@ -128,7 +122,7 @@ $accent-color: red;*/
 }
 
 /*****FADING ANIMATION******/
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -137,7 +131,7 @@ $accent-color: red;*/
   }
 }
 
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -160,7 +154,8 @@ $accent-color: red;*/
   display: -ms-flexbox;
   display: flex;
   padding: 16px;
-  border-bottom: 3px solid #F4DBDB;
+  -webkit-box-shadow: 0px 0px 0px 8px #F4DBDB;
+          box-shadow: 0px 0px 0px 8px #F4DBDB;
 }
 
 .Navbar__Link {
@@ -187,6 +182,7 @@ $accent-color: red;*/
   margin-right: 50px;
   padding: 10px;
   color: black;
+  text-transform: uppercase;
 }
 
 .Navbar__Items--right {
@@ -453,7 +449,7 @@ section div.intro-sec1 img {
 
 .intro-container h1 {
   font-size: 3rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
 }
 
@@ -692,8 +688,7 @@ h1 span.features-special {
 .blog-container img {
   max-width: 100%;
   height: auto;
-  padding: 5px;
-  border: 3px solid #F4DBDB;
+  padding: 10px;
   border-radius: 15px;
   margin-top: 10px;
 }
@@ -747,7 +742,6 @@ h1 span.features-special {
   max-width: 100%;
   height: auto;
   padding: 5px;
-  border: 3px solid #F4DBDB;
   border-radius: 15px;
   margin-top: 10px;
 }
@@ -771,28 +765,13 @@ h1 span.features-special {
   font-size: 1.2rem;
 }
 
-.page-changer a:nth-child(1) {
+.page-changer a {
   padding: 10px;
-  -ms-flex-item-align: left;
-      -ms-grid-row-align: left;
-      align-self: left;
   text-decoration: none;
   color: black;
+  z-index: -1;
 }
 
-.page-changer a:nth-child(2) {
-  padding: 10px;
-  -ms-flex-item-align: right;
-      -ms-grid-row-align: right;
-      align-self: right;
-  text-decoration: none;
-  color: black;
-}
-
-/* Tablet Styles */
-/** MY WORK CONTENT */
-/* Desktop Styles */
-/* CORE CONTENT */
 /*****CONTACT MAIN CONTENT******/
 #name, #_replyto, #message {
   display: block;
@@ -828,7 +807,7 @@ input[type=submit] {
   padding: 12px 20px;
   border-radius: 30px;
   padding: 10px 20px 10px 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 }
 
@@ -899,7 +878,7 @@ input[type=submit]:active {
   padding: 10px;
   -ms-flex-item-align: left;
       align-self: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -1078,7 +1057,7 @@ body {
   -ms-grid-rows: 0.1fr auto 0.1fr;
       grid-template-rows: 0.1fr auto 0.1fr;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Mobile menu */
@@ -1103,7 +1082,7 @@ main {
 /*****HEADINGS FOR EACH PAGE FORMATTING******/
 .page-headings {
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 600;
   font-size: 3rem;
 }
@@ -1117,7 +1096,7 @@ main {
   display: block;
   font-size: 0.9rem;
   color: #0F9B9B;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 /*****CORE FOR MOST PAGE FORMATTING******/
@@ -1167,7 +1146,7 @@ main {
 
 .info-container h3 {
   font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 /* Tablet Styles */

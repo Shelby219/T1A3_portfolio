@@ -2,22 +2,7 @@
 /*****ANIMATIONS******/
 
 /*****NAVBAR LINE ANIMATION******/
-.Navbar  {
 
-}
-
-
-
-
-
-@keyframes spin {
-  from {
-      transform:rotate(0deg);
-  }
-  to {
-    transform: rotate(1080deg);
-  }
-}
 
 /*************************/
 
@@ -52,7 +37,23 @@
     left: 0;
     right: 0;
   }
-    
+ /*********************************/  
+
+
+
+  /*****Hover ANIMATION 2******/  
+  
+
+
+
+      
+ /*********************************/  
+
+
+
+
+
+
 /*****LOGO ANIMATION******/
 .Navbar__Link-brand:hover  {
   animation-name: spin;
@@ -105,36 +106,19 @@
       }
 
       @keyframes slideup {
-          from {
-          margin-bottom: 100%;
-          width: 300%;
-          }
-          to {
-          
-          width: 100%;
-          }
+          from {margin-bottom: 100%; width: 300%;}
+          to {       width: 100%;}
       }
 
-  
 /*****FADING ANIMATION******/
-@-webkit-keyframes fadeIn { 
-  0% {opacity: 0;}
-100% {opacity: 1;} 
-}
-@-moz-keyframes fadeIn { 
-  0% {opacity: 0;}
-100% {opacity: 1;} 
-}
-@keyframes fadeIn { 
-  0% {opacity: 0;}
-100% {opacity: 1;} 
-}
+@keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-moz-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-webkit-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
 
-.desktop-container, .core-container{
-  -webkit-animation:fadeIn ease-in 1; 
-  animation:fadeIn ease-in 1;
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+.desktop-container, .core-container {
+    -webkit-animation:fadeIn ease-in 1; 
+    animation:fadeIn ease-in 1;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
 }
-

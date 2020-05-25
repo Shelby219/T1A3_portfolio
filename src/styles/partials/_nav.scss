@@ -4,7 +4,8 @@
     background-color: $white-color;
     display: flex;
     padding: 16px;
-    border-bottom: 3px solid $alternate-color;
+    
+    box-shadow: 0px 0px 0px 8px $alternate-color;      
   }
 
   .Navbar__Link {
@@ -28,11 +29,9 @@
     margin-right: 50px;
     padding: 10px;
     color: $text-color;
+    text-transform: uppercase;
   }
-  .item:hover {
-    
-  }
-
+  
 
   .Navbar__Items--right {
     margin-left:auto;
