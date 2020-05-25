@@ -26,7 +26,7 @@ This website features several pages all with a cohesive responsive design with m
 
 - Return to top of the page arrow operating with jquery (goal is to re do using pure JavaScript)
 
-- Hover underline for navigation bar and additiona links
+- Hover underline for navigation bar and additional links
 
 - Alternative hover for other links
 
@@ -36,7 +36,7 @@ This website features several pages all with a cohesive responsive design with m
 
 - Specifically chosen fonts that relate to my design, but with relevant fall back fonts.
 
-- Use of SASS partials for building my styles so as to seperate components simply so future editing is smoother.
+- Use of SASS partials for building my styles to separate components simply so future editing is smoother.
 
 - Sass variables for colours and fonts for easy accessibility.
 
