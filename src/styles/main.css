@@ -3,8 +3,6 @@ $hover-color: green;
 $accent-color: red;*/
 /*font-family: 'Playfair Display', serif; font-family: 'Libre Baskerville', serif;*/
 /*****ANIMATIONS******/
-/*****NAVBAR LINE ANIMATION******/
-/*************************/
 /*****Alternative HOVER ANIMATION******/
 .footer-links:hover, .icons:hover, .blog-recent-posts a:hover {
   border-bottom: solid 2px #F4DBDB;
