@@ -46,9 +46,12 @@
                                         <h2 class = "page-headings" >My Thoughts<span>.</span><br><b>and a space to share them</b></h2>
                                         <div class = "core-child" >
                                             <div class = "core-info-content blog-container"> 
-                                                <!--SEARCH BAR -->
+                                                <!--SEARCH BAR -NOT ACTIVE YET JUST FOR FUTURE USE-->
                                                     <div class = "blog-posts searchbar">
-                                                        <input type="text" placeholder="Search Posts..">   <i class="fas fa-search"></i>
+                                                        <form role="search" method="get" id="searchform" class="searchform" action="https://shelbye.netlify.app/src/blog.html">
+                                                        <label class="screen-reader-text" for="s">Search for:</label>
+                                                        <input type="text" name="s" id="s" placeholder="Search Posts.."/>   <button type="submit" id="searchsubmit"><i class="fas fa-search"></i></button>
+                                                        </form>
                                                     </div>
                                                 <ul class="blog-posts">
                                                 <li>
