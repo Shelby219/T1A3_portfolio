@@ -4,8 +4,8 @@
     background-color: $white-color;
     display: flex;
     padding: 16px;
-    
-    box-shadow: 0px 0px 0px 8px $alternate-color;      
+    border-bottom: solid 1px $alternate-color;      
+   
   }
 
   .Navbar__Link {

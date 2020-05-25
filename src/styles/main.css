@@ -5,6 +5,22 @@ $accent-color: red;*/
 /*****ANIMATIONS******/
 /*****NAVBAR LINE ANIMATION******/
 /*************************/
+/*****Alternative HOVER ANIMATION******/
+.footer-links:hover, .icons:hover, .blog-recent-posts a:hover {
+  border-bottom: solid 2px #F4DBDB;
+  color: darkblue;
+}
+
+/*****My work and blog posts ******/
+.read-more:hover, .arrow-right:hover, .project-description h4:hover {
+  background-color: #F4DBDB;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  color: darkblue;
+}
+
+/*************************/
 /*****Hover ANIMATION******/
 .item-underline {
   display: inline-block;
@@ -154,8 +170,7 @@ $accent-color: red;*/
   display: -ms-flexbox;
   display: flex;
   padding: 16px;
-  -webkit-box-shadow: 0px 0px 0px 8px #F4DBDB;
-          box-shadow: 0px 0px 0px 8px #F4DBDB;
+  border-bottom: solid 1px #F4DBDB;
 }
 
 .Navbar__Link {
@@ -525,11 +540,9 @@ h1 span.features-special {
   font-style: bold;
 }
 
-.blog-recent-posts strong:hover, .blog-recent-posts a:hover {
-  color: darkblue;
-}
-
 .subtitle {
+  padding-bottom: 15px;
+  padding-top: 15px;
   font-size: 1rem;
 }
 
@@ -644,14 +657,6 @@ h1 span.features-special {
   color: black;
 }
 
-.project-description h4:hover, .project-description p:hover {
-  background-color: #F4DBDB;
-  border-radius: 30px;
-  padding: 10px;
-  cursor: pointer;
-  color: darkblue;
-}
-
 .currently-container {
   display: inline-block;
   padding: 10px;
@@ -724,14 +729,6 @@ h1 span.features-special {
   font-size: 1rem;
 }
 
-.read-more:hover, .arrow-right:hover {
-  background-color: #F4DBDB;
-  border-radius: 30px;
-  padding: 10px;
-  cursor: pointer;
-  color: darkblue;
-}
-
 /* Tablet Styles */
 /** MY WORK CONTENT */
 /* Desktop Styles */
@@ -768,7 +765,7 @@ h1 span.features-special {
   padding: 10px;
   text-decoration: none;
   color: black;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*****CONTACT MAIN CONTENT******/

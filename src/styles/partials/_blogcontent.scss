@@ -42,20 +42,11 @@
     font-size: 1rem;
 }
 
-.read-more:hover, .arrow-right:hover {
-    background-color: $alternate-color;
-    border-radius: 30px; 
-    padding: 10px;
-    cursor: pointer;      
-    color: $hover-color;
-}
-
 /* Tablet Styles */ /** MY WORK CONTENT */
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
-
       
 }
 /* Desktop Styles */ /* CORE CONTENT */

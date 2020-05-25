@@ -6,6 +6,22 @@
 
 /*************************/
 
+/*****Alternative HOVER ANIMATION******/
+
+.footer-links:hover , .icons:hover, .blog-recent-posts a:hover {
+  border-bottom: solid 2px $alternate-color;    
+  color: $hover-color;
+}
+/*****My work and blog posts ******/
+.read-more:hover, .arrow-right:hover, .project-description h4:hover{
+  background-color: $alternate-color;
+  border-radius: 30px; 
+  padding: 10px;
+  cursor: pointer;
+  color: $hover-color;
+}
+/*************************/
+
 
 /*****Hover ANIMATION******/
   .item-underline{

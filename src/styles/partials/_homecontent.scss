@@ -103,12 +103,10 @@ font-size: 1.5rem;
 font-style: bold;  
 }
 
-.blog-recent-posts strong:hover, .blog-recent-posts a:hover{
-    color: $hover-color;
-    }
-
 .subtitle {
-font-size: 1rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1rem;
 }
 
 
@@ -128,11 +126,11 @@ font-size: 1rem;
     }
 
     .blog-recent-container {
-       
+        
         margin-right: 100px;
         margin-left: 100px;
     }
-   
+    
         
 }
 

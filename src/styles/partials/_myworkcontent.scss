@@ -31,13 +31,7 @@
     color: $text-color;
 }
 
-.project-description h4:hover, .project-description p:hover {
-    background-color: $alternate-color;
-    border-radius: 30px; 
-    padding: 10px;
-    cursor: pointer;
-    color: $hover-color;
-}
+
 
  .currently-container {
     display: inline-block;
