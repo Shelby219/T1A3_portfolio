@@ -5,13 +5,13 @@ $accent-color: red;*/
 /*****ANIMATIONS******/
 /*****Alternative HOVER ANIMATION******/
 .footer-links:hover, .icons:hover, .blog-recent-posts a:hover {
-  border-bottom: solid 2px #F4DBDB;
+  border-bottom: solid 2px lightgrey;
   color: darkblue;
 }
 
 /*****My work and blog posts ******/
 .read-more:hover, .arrow-right:hover, .project-description h4:hover {
-  background-color: #F4DBDB;
+  background-color: lightgrey;
   border-radius: 30px;
   padding: 10px;
   cursor: pointer;
@@ -38,7 +38,7 @@ $accent-color: red;*/
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #F4DBDB;
+  background: lightgrey;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -150,7 +150,7 @@ $accent-color: red;*/
   display: -ms-flexbox;
   display: flex;
   padding: 16px;
-  border-bottom: solid 1px #F4DBDB;
+  border-bottom: solid 1px lightgrey;
 }
 
 .Navbar__Link {
@@ -223,7 +223,7 @@ $accent-color: red;*/
   }
   .item {
     color: black;
-    background-color: #F4DBDB;
+    background-color: lightgrey;
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -375,7 +375,8 @@ $accent-color: red;*/
 
 /* OBJECTS */
 .bubble {
-  background-image: url("https://images.unsplash.com/photo-1561714813-4f3b8e4c7f77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+  background-image: url("../imgs/polka-dots.png");
+  background-size: 100%;
   border-radius: 50%;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
@@ -440,7 +441,7 @@ section div.intro-sec1 img {
 
 .intro-container h2 {
   font-size: 1.75rem;
-  color: #0F9B9B;
+  color: red;
 }
 
 .intro-container h1 {
@@ -450,12 +451,12 @@ section div.intro-sec1 img {
 }
 
 p span.features-special {
-  color: #0F9B9B;
+  color: red;
   font-size: 1.4rem;
 }
 
 h1 span.features-special {
-  color: #0F9B9B;
+  color: red;
   font-size: 4rem;
 }
 
@@ -480,7 +481,7 @@ h1 span.features-special {
 
 .blog-recent-container h3 {
   padding: 20px;
-  background-color: #F4DBDB;
+  background-color: lightgrey;
   border-radius: 30px;
 }
 
@@ -491,7 +492,7 @@ h1 span.features-special {
 }
 
 .blog-recent-container h3 a:hover {
-  background-color: #F4DBDB;
+  background-color: lightgrey;
   cursor: pointer;
   color: darkblue;
 }
@@ -509,7 +510,7 @@ h1 span.features-special {
 .blog-recent-posts a {
   text-decoration: none;
   text-align: left;
-  border-bottom: 1px dashed #0F9B9B;
+  border-bottom: 1px dashed red;
   color: black;
   width: 100%;
   padding: 10px;
@@ -599,7 +600,7 @@ h1 span.features-special {
 
 .skills-icons {
   font-size: 50px;
-  color: #0F9B9B;
+  color: red;
 }
 
 /*******************************/
@@ -614,7 +615,7 @@ h1 span.features-special {
 
 .completed-projects ul li {
   list-style: none;
-  border-bottom: 3px solid #0F9B9B;
+  border-bottom: 3px solid red;
   border-bottom-style: dotted;
   margin-top: 30px;
 }
@@ -680,7 +681,7 @@ h1 span.features-special {
 
 .blog-container ul li {
   list-style: none;
-  border-bottom: 3px solid #0F9B9B;
+  border-bottom: 3px solid red;
   border-bottom-style: dotted;
   margin-top: 30px;
 }
@@ -697,7 +698,7 @@ h1 span.features-special {
 }
 
 .read-more {
-  color: #0F9B9B;
+  color: red;
 }
 
 .date {
@@ -706,7 +707,7 @@ h1 span.features-special {
 }
 
 .arrow-right {
-  color: #0F9B9B;
+  color: red;
   font-size: 1rem;
 }
 
@@ -772,7 +773,7 @@ h1 span.features-special {
 }
 
 .form-label {
-  background-color: #F4DBDB;
+  background-color: lightgrey;
   border-radius: 25px;
   padding: 5px;
   color: black;
@@ -780,7 +781,7 @@ h1 span.features-special {
 }
 
 input[type=submit] {
-  background-color: #0F9B9B;
+  background-color: red;
   color: white;
   padding: 12px 20px;
   border-radius: 30px;
@@ -790,7 +791,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #F4DBDB;
+  background-color: lightgrey;
   cursor: pointer;
   color: darkblue;
 }
@@ -910,7 +911,7 @@ input[type=submit]:active {
 
 .footer-links {
   text-decoration: none;
-  color: #0F9B9B;
+  color: red;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -1066,14 +1067,14 @@ main {
 }
 
 .page-headings span {
-  color: #0F9B9B;
+  color: red;
   font-size: 2rem;
 }
 
 .page-headings b {
   display: block;
   font-size: 0.9rem;
-  color: #0F9B9B;
+  color: red;
   font-family: "Libre Baskerville", serif;
 }
 
