@@ -83,7 +83,12 @@ This website features several pages all with a cohesive responsive design with m
 ## Images (screenshots)
 
 
-
+![Screenshots of home page](./docs/Screen-shots-readme/Screen-shot-1.png)
+![Screenshots of about page](./docs/Screen-shots-readme/Screen-shot-2.png)
+![Screenshots of my work page](./docs/Screen-shots-readme/Screen-shot-3.png)
+![Screenshots of blog main page](./docs/Screen-shots-readme/Screen-shot-4.png)
+![Screenshots of blog posts page](./docs/Screen-shots-readme/Screen-shot-5.png)
+![Screenshots of contact page](./docs/Screen-shots-readme/Screen-shot-6.png)
 ------
 
 ## Target Audience
