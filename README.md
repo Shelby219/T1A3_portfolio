@@ -6,14 +6,12 @@ Remote Repository: https://github.com/Shelby219/T1A3_portfolio
 
 ------
 
-# Description
-
-
 ## Purpose
 
 The purpose of this website is to present an online resume of my work, skills, education and contact information. It can also give insight into my personality and interests. Additionally it can 
 
 ------
+
 ## Functionality / features
 
 This website features several pages all with a cohesive responsive design with mobile, tablet and desktop capabilites. All pages are accessible by the top navigation menu, which is either spread across the home page, or via a burger toggle on a mobile or tablet. The footer is uniform across each page as well. All pages are responsive via the use of a small amount of grid, but mostly via flexbox and relevant media queries.
@@ -41,8 +39,6 @@ This website features several pages all with a cohesive responsive design with m
 - Use of SASS partials for building my styles so as to seperate components simply so future editing is smoother.
 
 - Sass variables for colours and fonts for easy accessibility.
-
-
 
 ### Page Specific Features
 
@@ -78,10 +74,11 @@ This website features several pages all with a cohesive responsive design with m
 ------
 ## Sitemap
 
+![Site-map](./docs/sitemap.png)
 
 ------
-## Images (screenshots)
 
+## Images (screenshots)
 
 ![Screenshots of home page](./docs/Screen-shots-readme/Screen-shot-1.png)
 ![Screenshots of about page](./docs/Screen-shots-readme/Screen-shot-2.png)
@@ -89,11 +86,13 @@ This website features several pages all with a cohesive responsive design with m
 ![Screenshots of blog main page](./docs/Screen-shots-readme/Screen-shot-4.png)
 ![Screenshots of blog posts page](./docs/Screen-shots-readme/Screen-shot-5.png)
 ![Screenshots of contact page](./docs/Screen-shots-readme/Screen-shot-6.png)
+
 ------
 
 ## Target Audience
 
 The target audience is for potential future employers looking to engage a developer, also possibly in future, potential independant contract work.
+
 ------
 
 ## Tech Stack
