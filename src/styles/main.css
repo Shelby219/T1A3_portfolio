@@ -735,7 +735,8 @@ h1 span.features-special {
 .blog-pic img {
   max-width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 10px;
+  padding-bottom: 30px;
   border-radius: 15px;
   margin-top: 10px;
 }
