@@ -56,8 +56,6 @@ $accent-color: red;*/
 }
 
 /*********************************/
-/*****Hover ANIMATION 2******/
-/*********************************/
 /*****LOGO ANIMATION******/
 .Navbar__Link-brand:hover {
   -webkit-animation-name: spin;
@@ -76,8 +74,8 @@ $accent-color: red;*/
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -87,8 +85,8 @@ $accent-color: red;*/
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
