@@ -103,7 +103,8 @@ The following were utilised in this project:
 - HTML5
 - CSS3
 - SASS
-- jquery - (this was used for the burger nav toggle and the return to top- my goal is the redo this using my own JavaScript)
+- JavaScript (this was used for the burger nav toggle)
+- jquery - (the return to top arrow- my goal is the redo this using my own JavaScript)
 - Git & Github
 - Font Awesome (for icons)
 - Devicon (for technology icons)
